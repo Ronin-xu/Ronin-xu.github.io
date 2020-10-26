@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Python学习记录</title>
+    <url>/2020/10/19/Python%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h3 id="1-什么是Python-解释器"><a href="#1-什么是Python-解释器" class="headerlink" title="1. 什么是Python 解释器?"></a>1. 什么是<em>Python 解释器</em>?</h3><ul>
+<li>Python 解释器是运行你所编写的 Python 程序的程序。</li>
+</ul>
+<h3 id="2-什么是源代码"><a href="#2-什么是源代码" class="headerlink" title="2. 什么是源代码?"></a>2. 什么是<em>源代码</em>?</h3><ul>
+<li>源代码是为程序所写的语句:它由文本文件中的文本组成，通常以 .py 作为后缀名。</li>
+</ul>
+<h3 id="3-什么是字节码"><a href="#3-什么是字节码" class="headerlink" title="3. 什么是字节码?"></a>3. 什么是<em>字节码</em>?</h3><ul>
+<li>字节码是Python将程序编译后所得到的低级形式。Python自动将字节码保存到后缀名为.pyc 的文件中。</li>
+</ul>
+<h3 id="4-什是-PVM"><a href="#4-什是-PVM" class="headerlink" title="4. 什是 PVM?"></a>4. 什是 <em>PVM</em>?</h3><ul>
+<li>PVM是Python 虚拟机，它是<em>Python</em>的运行时引擎，能解释编译得到的字节码。</li>
+</ul>
+<h3 id="5-CPython-Jython-以及-lronPython-有什么不同"><a href="#5-CPython-Jython-以及-lronPython-有什么不同" class="headerlink" title="5. CPython Jython 以及 lronPython 有什么不同?"></a>5. CPython Jython 以及 lronPython 有什么不同?</h3><ul>
+<li>CPython是Python 语言的标准实现。 Jython IronPython 分别是 Python程序在Java<br>.NET 环境中的实现，它们都是 Python 的替代编译器。</li>
+</ul>
+<h3 id="6-什么是-Stackless-PyPy"><a href="#6-什么是-Stackless-PyPy" class="headerlink" title="6. 什么是 Stackless PyPy?"></a>6. 什么是 Stackless PyPy?</h3><ul>
+<li>Stackless是一种针对井发性而增强的 Python 版本，而 PyPy 是针对速度而增强的<br>Python 实现。 PyPy 作为 Psyco 的继任者，融合了 Psyco 中的 JIT 概念。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Web前端学习记录</title>
+    <url>/2020/10/19/Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF/</url>
+    <content><![CDATA[<h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><h3 id="HTML-标记"><a href="#HTML-标记" class="headerlink" title="HTML 标记"></a>HTML 标记</h3><p><strong>标记语法格式：</strong>&lt;标记名称 属性=”属性值” 属性=”属性值…”&gt;…&lt;/标记名称&gt;<br>例如：&lt;ahref=”index.html”&gt;反首页</a></p>
+<h3 id="HTML-基本结构"><a href="#HTML-基本结构" class="headerlink" title="HTML 基本结构"></a>HTML 基本结构</h3><!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":140,"height":260},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: true,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+</html>]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用git将本地文件与远程仓库关联</title>
+    <url>/2020/07/25/%E6%9C%AC%E5%9C%B0git%E5%92%8C%E8%BF%9C%E7%A8%8Bgithub%E8%BF%9E%E6%8E%A5/</url>
+    <content><![CDATA[<p>首先打开并登陆Github，创建一个新的仓库</p>
+<a id="more"></a>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200725154554.png" alt=""><br>仓库名任取，填好后点击下方的创建<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200725154829.png" alt=""><br>然后在本地创建一个文件夹<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200725154932.png" alt=""><br>进入此文件夹后随便创建几个文本,方便测试<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200725155051.png" alt=""><br>然后Git Bash<br>依次执行如下命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git init &amp;&amp; git add -A &amp;&amp; git commit -m <span class="string">"update"</span></span><br></pre></td></tr></table></figure>
+<p>此时返回到刚刚的github界面，复制命令<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200725155750.png" alt=""><br>然后粘贴到Git Bash命令中(Shift+Ins)，之后回车就可以了<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200725160040.png" alt=""><br>此时回到远程仓库，关联成功<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200725160141.png" alt=""></p>
+<blockquote>
+<p><strong>注:</strong>此方法可以用在写博客时将图片以cdn的形式存在于博客中,这样大大提高了博客网站的性能,有效提高了访问速度</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Sublime TEXT3汉化教程</title>
+    <url>/2020/07/04/Sublime-TEXT3%E6%B1%89%E5%8C%96%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p><strong>首先，需要安装Package Control<br>启动并进入sublime主界面，打开Sublime Text的控制台（快捷键 ctrl + ~）</strong></p>
+<a id="more"></a>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1517599-20190319232148379-456241690.png" alt=""><br><strong>然后我们到Package Control官方网站，复制sublime text 3的脚本文件</strong><br>网址：<a href="https://packagecontrol.io/installation" target="_blank" rel="noopener">https://packagecontrol.io/installation</a><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1517599-20190319232800990-580176441.png" alt=""><br><strong>脚本文件如下：</strong></p>
+<figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request,os,hashlib; h = <span class="string">'6f4c264a24d933ce70df5dedcf1dcaee'</span> + <span class="string">'ebe013ee18cced0ef93d5f746d80ef60'</span>; pf = <span class="string">'Package Control.sublime-package'</span>; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); <span class="keyword">by</span> = urllib.request.urlopen( <span class="string">'http://packagecontrol.io/'</span> + pf.replace(<span class="string">' '</span>, <span class="string">'%20'</span>)).<span class="keyword">read</span>(); dh = hashlib.sha256(<span class="keyword">by</span>).hexdigest(); print(<span class="string">'Error validating download (got %s instead of %s), please try manual install'</span> % (dh, h)) <span class="keyword">if</span> dh != h <span class="keyword">else</span> <span class="keyword">open</span>(os.path.<span class="keyword">join</span>( ipp, pf), <span class="string">'wb'</span> ).<span class="keyword">write</span>(<span class="keyword">by</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>打开控制台，将复制好的脚本文件粘贴到控制台，然后enter。</strong><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1517599-20190319233101766-2086663780.png" alt=""><br><strong>点击菜单 Preferences -&gt; Package Control</strong><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1517599-20190319233207127-1578885652.png" alt=""><br><strong>然后选择 Package Control：Install Package</strong><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1517599-20190319233305994-1872301961.png" alt=""><br><strong>稍等片刻过后会弹出命令界面，输入ChineseLocalization回车。</strong><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1517599-20190319233455450-1830805950.png" alt=""><br><strong>稍等片刻，软件的界面就是中文界面了。</strong><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1517599-20190319233644195-1661766264.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>汉化</category>
+      </categories>
+      <tags>
+        <tag>汉化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>翻墙(科学上网)</title>
+    <url>/2020/07/01/%E7%BF%BB%E5%A2%99-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</url>
+    <content><![CDATA[<h2 id="白嫖篇"><a href="#白嫖篇" class="headerlink" title="白嫖篇"></a>白嫖篇</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>实际上，科学上网是现在的网络流行用语，是指某种通过科学的方法绕过上网限制访问。</p>
+<p>某种通过科学的方法绕过上网限制访问，利用vpn或者修改hosts文件的方法实行。</p>
+<a id="more"></a>
+<p>网民们可以利用vpn的方法实行科学上网，下面我会依次教学电脑与手机的翻墙方法</p>
+<h3 id="电脑"><a href="#电脑" class="headerlink" title="电脑"></a>电脑</h3><p>总所周知，谷歌浏览器限制了中国用户的访问，一些业界人士熟知谷歌浏览器的搜索引擎避免了很多没有用的垃圾信息，往往是一针见血，于是就有了翻墙这一说，所谓翻墙，是指绕过相应的IP封锁、内容过滤、域名劫持、流量限制等，实现对网络内容的访问<br><strong>话不多说，进入正题</strong></p>
+<hr>
+<p>谷歌浏览器(Chrome)</p>
+<blockquote>
+<p><a href="https://www.google.cn/chrome/index.html" target="_blank" rel="noopener">下载地址</a></p>
+</blockquote>
+<p>谷歌访问助手</p>
+<blockquote>
+<p><a href="https://yshs.lanzous.com/b09wptm0d" target="_blank" rel="noopener">下载地址</a></p>
+</blockquote>
+<p>下载成功后将其解压到一个你能找到的地方</p>
+<ul>
+<li>然后打开谷歌浏览器的扩展程序<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200701170336.png" alt=""><br>开启开发者模式，点击加载已解压的扩展程序(选中你解压后的文件夹)<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200701170825.png" alt=""><br>解压后你会发现你多了一个拓展程序<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200701172853.png" alt=""><br>接下来就可以使用谷歌浏览器喽<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200701173250.png" alt=""><h3 id="手机-Android"><a href="#手机-Android" class="headerlink" title="手机(Android)"></a>手机(Android)</h3>v2rayNG<blockquote>
+<p><a href="https://colsrch.coding.net/s/6cf01f01-f8e6-4d05-9e21-c2eaaf7599be" target="_blank" rel="noopener">点我下载</a></p>
+</blockquote>
+</li>
+</ul>
+<p><strong>使用方法</strong><br>打开软件点左上角，选择“订阅设置” 依次点“+”号；备注随便写。在地址（URL）那填写:</p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="symbol">https:</span><span class="comment">//jiang.netlify.app</span></span><br></pre></td></tr></table></figure>
+<p>然后点右上角的小对号 √ 保存。 退出来后，点右上角的三个小点，点击》最下面的 更新订阅，就能收到二爷给您准备好的服务器了。 点右下角的小V，连接，即可连接国际互联网了。 此时是全局代理，如想自动代理，请在设置里，更改路由模式为“绕过局域网和大陆”即可，国外的网站经过代理服务器，国内的直连。</p>
+<blockquote>
+<p>参考文献：<a href="https://github.com/ugvf2009/Miles" target="_blank" rel="noopener">https://github.com/ugvf2009/Miles</a></p>
+</blockquote>
+<h2 id="付费篇"><a href="#付费篇" class="headerlink" title="付费篇"></a>付费篇</h2><h3 id="前言-1"><a href="#前言-1" class="headerlink" title="前言"></a>前言</h3><p>白嫖当然没有花钱来的实在，本篇主要是详细讲解如何自己购买服务器并完成梯子搭建和服务配置</p>
+<h3 id="1-综述"><a href="#1-综述" class="headerlink" title="1.综述"></a>1.综述</h3><p>本文总结了自己在搭建VPS过程中遇到的各种坑，以及最后的解决方案，以供大家参考。本文分为5章，将按操作顺序介绍部署用于SSR代理服务的VPS服务器的详细过程，按照步骤操作一切正常的话半小时之内即可配置成功。如果配置过程中有什么疑问，欢迎在留言区交流！</p>
+<h3 id="2-VPS服务器购买"><a href="#2-VPS服务器购买" class="headerlink" title="2.VPS服务器购买"></a>2.VPS服务器购买</h3><h4 id="2-1-注册vultr"><a href="#2-1-注册vultr" class="headerlink" title="2.1 注册vultr"></a>2.1 注册vultr</h4><p>我使用的服务器是vultr。主要因为其按小时计费，随时可以停用服务器。这一点很重要，现在GFW相当高，很容易被墙。一旦被墙月结的损失比较大。其次，vultr本身没有被墙，这一点很重要，不然就是先有鸡还是先有蛋的问题了。当然，可以支付宝付款也是一个加分点。vultr<a href="https://vultr.com" target="_blank" rel="noopener">注册地址</a>，点击链接跳转到vultr，网页右上角有个Create Account就是注册的地方了，接下来就是注册并激活账号了。</p>
+<h4 id="2-2-充值"><a href="#2-2-充值" class="headerlink" title="2.2 充值"></a>2.2 充值</h4><p>在购买服务器之前需要先充值。登陆vultr之后如图Billing-&gt;Alipay，选好要充值的金额数，然后Pay with Alipay即可跳转到支付宝扫码支付页面。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Billing.jpg" alt=""></p>
+<h4 id="2-3-购买服务器"><a href="#2-3-购买服务器" class="headerlink" title="2.3 购买服务器"></a>2.3 购买服务器</h4><p>点击vultr网页右上角的蓝色+图标即可为账户添加服务器。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/addServer.jpg" alt=""></p>
+<blockquote>
+<p><strong>注意</strong>：向下滚动有很多选项，不要直接点击Deploy Now，这样会使用默认参数，但不是我们想要的！ 第一个选项为选择服务器地址（Server Location），建议选择硅谷（Silicon Valley，离google最近），而不要选择日本（用的人多，大部分IP已经被墙）；</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9C%B0%E7%82%B9.jpg" alt=""><br>第二个选项为选择服务器类型（Server Type），即选择服务器操作系统。建议选择Debian 7 x64，默认没有防火墙，会减少很多麻烦。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%B1%BB%E5%9E%8B.jpg" alt=""><br>第三个选项为选择服务器大小（Server Size），即选择服务器硬件性能。因为我们使用VPS服务器FQ，所以性能瓶颈不在配置，而在网络带宽之类的。由于vultr的服务器带宽都是100M的，所以服务器当然是往便宜了选。当然，$2.5/mo的一般都是缺货的。选择$5/mo的就好，一个月三十几块钱，要是有好几个人一起分担的话就相当实惠了。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%A4%A7%E5%B0%8F.jpg" alt=""><br>第四、五、六三个选项不懂就可以不用管它。<br>第七条要求为即将部署的服务器命名并给一个标签，随意就好。<br>此时可以点击右下角的现在展开（Deploy Now），vultr即开始分配资源，安装系统。此时Servers页面可以看到服务器信息，状态显示installing。当状态切换为Running的时候，服务器就可以使用了。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A0%87%E7%AD%BE.jpg" alt=""></p>
+<h3 id="3-VPS服务器部署"><a href="#3-VPS服务器部署" class="headerlink" title="3. VPS服务器部署"></a>3. VPS服务器部署</h3><h4 id="3-1-服务器信息查看"><a href="#3-1-服务器信息查看" class="headerlink" title="3.1 服务器信息查看"></a>3.1 服务器信息查看</h4><p>服务器安装结束之后在Servers页面点击刚才购买的服务器名字即可跳转到服务器详情页。如图右上角有一个View console可以直接通过网页连接到服务器，但是由于它是老外弄的，所以不支持中文，不能使用，我们需要使用第三方工具连接到服务器。所以需要知道IP、用户名和密码，如图左下角。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BF%A1%E6%81%AF.jpg" alt=""></p>
+<h4 id="3-2-远程工具安装"><a href="#3-2-远程工具安装" class="headerlink" title="3.2 远程工具安装"></a>3.2 远程工具安装</h4><p>这个第三方远程管理工具叫做<a href="https://www.netsarang.com/en/xshell/" target="_blank" rel="noopener">Xshell</a>，现在是第五版。自己随便找个连接下载就好了，各个软件管家里面都有的。而且Xshell学生和家庭版是免费的，可以随便使用而不需要破解。安装好Xshell之后即可开始连接服务器进行部署了。</p>
+<h4 id="3-3-连接服务器"><a href="#3-3-连接服务器" class="headerlink" title="3.3 连接服务器"></a>3.3 连接服务器</h4><p>启动Xshell，从菜单栏的文件-&gt;新建打开新建会话窗口如下图。会话名称随便取一个都可以，主机填写刚才记下来的服务器IP地址。点击确定立即尝试连接服务器，如果能连接上服务器会提示输入用户名和密码。用户名为root，密码可以从vultr服务器详情页拷贝过来。可以记住用户名和密码，这样下次连接就不用再输入那个复杂的密码了（当然密码是可以修改的，但是没必要。系统自动生成的密码强度相当高，可以避免暴力破解。自己设的密码就不好说了，而且还容易忘记）。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E6%96%B0%E5%BB%BA%E4%BC%9A%E8%AF%9D.jpg" alt=""><br>连接成功之后会出现命令提示符：<code>root@username:~#</code><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Xshell.jpg" alt=""><br>接下来就可以开始安装SSR了。如果Xshell一直连不上服务器，那么多半是被墙了，可以尝试着<a href="http://ping.chinaz.com/" target="_blank" rel="noopener">ping</a>一下服务器看看。如果ping不通的话就只能换掉服务器了（血的教训：先购买新服务器，再去vultr服务器页面Destroy。反过来的话间隔太小，估计又买到原来的ip了）。</p>
+<h4 id="3-4-安装ShadowsocksR一键管理脚本"><a href="#3-4-安装ShadowsocksR一键管理脚本" class="headerlink" title="3.4 安装ShadowsocksR一键管理脚本"></a>3.4 安装ShadowsocksR一键管理脚本</h4><p>接下来要通过一个一键管理脚本安装SSR，作者是在Debian 7 x64上开发的该脚本，这也是为什么推荐这个系统的原因之一。<br>首先需要安装wget（Web Get），使得可以在命令行下载互联网文件。命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install wget</span><br></pre></td></tr></table></figure>
+<p>如果上面命令提示command not found，则改用下面的命令替代之，反之亦然：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yum -y install wget</span><br></pre></td></tr></table></figure>
+<p>拷贝安装一键管理脚本的命令到控制台运行。以下两个命令分别为脚本命令以及备用命令（其实就是地址不一样），运行任意一个即可。然后等待脚本安装完成，期间如果有提示输入Y记得输入一下。注意，命令的参数包括命令后面的网址，要一起拷贝，虽然显示出来可能是两行，但其实是没有换行的。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget -N --no-check-certificate https://softs.fun/Bash/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh</span><br></pre></td></tr></table></figure>
+<p>或</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh</span><br></pre></td></tr></table></figure>
+<p>上述命令运行后会提示你输入数字来选择要做什么。输入 1 ，就会开始安装ShadowsocksR服务端，并且会提示你输入ShadowsocksR的 端口/密码/加密方式/ 协议/混淆（混淆和协议是通过输入数字选择的） 等参数。虽然没有必要，但是可以考虑重启一下服务器（命令：reboot）。然后输入运行脚本的命令即可开始配置SSR了。运行管理脚本的命令为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">bash ssr.sh</span><br></pre></td></tr></table></figure>
+<h4 id="3-5-安装ShadowsocksR"><a href="#3-5-安装ShadowsocksR" class="headerlink" title="3.5 安装ShadowsocksR"></a>3.5 安装ShadowsocksR</h4><p>运行脚本：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">bash ssr.sh</span><br></pre></td></tr></table></figure>
+<p>输入命令对应的数字来执行命令。</p>
+<blockquote>
+<p>ShadowsocksR 一键管理脚本脚本 [v2.0.35]</p>
+<ol>
+<li>安装 ShadowsocksR</li>
+<li>更新 ShadowsocksR</li>
+<li>卸载 ShadowsocksR</li>
+<li>安装 libsodium(chacha20)<br>————————————</li>
+<li>查看 账号信息</li>
+<li>显示 连接信息</li>
+<li>设置 用户配置</li>
+<li>手动 修改配置</li>
+<li>切换 端口模式<br>————————————</li>
+<li>启动 ShadowsocksR</li>
+<li>停止 ShadowsocksR</li>
+<li>重启 ShadowsocksR</li>
+<li>查看 ShadowsocksR 日志<br>————————————</li>
+<li>其他功能</li>
+<li>升级脚本<br>当前状态: 已安装 并 已启动<br>当前模式: 单端口<br>请输入数字(1-15)：<br>建议配置为：<br>端口：<strong>443</strong><br>加密：<strong>chacha20</strong><br>协议：<strong>auth_sha1_v4</strong><br>混淆：<strong>http_simple</strong></li>
+</ol>
+</blockquote>
+<p>所以按照如下步骤配置即可（下面步骤输入的数字可能会随着版本的变化而有细微变化，以实际为准。内容太多，懒得截图了）：</p>
+<ul>
+<li>1.运行：bash ssr.sh；</li>
+<li>2.输入4：安装libsodium，chacha20加密协议的依赖包，等待安装完成，期间如果有提示输入Y记得输入一下；</li>
+<li>3.运行：bash ssr.sh；</li>
+<li>4.运行安装SSR的命令：1。安装ShadowsocksR；</li>
+<li>5.输入端口号：443。443端口为HTTPS协议的默认端口，经过测试是最稳定的（不建议使用其他端口或者使用多端口模式，不过，如果需要在该vps服务器搭建https协议的网站的话就不能使用这个端口啦！）；</li>
+<li>6.输入密码：强度越大越好，反正不需要记忆；</li>
+<li>7.输入15：使用chacha20加密方式；</li>
+<li>8.输入2：使用authsha1_v4协议插件，输入2并确认后会提示是否兼容原版，原版指的是Shadowsocks，没有必要选择兼容，填n后回车即可。</li>
+<li><ol start="9">
+<li>输入2：使用http_simple混淆，延时小，可靠性高，同样也不需要兼容原版；（小概率导致windows客户端无法连接，可尝试切换其它协议。）</li>
+</ol>
+</li>
+<li>10.然后就是一些限制，一般默认几次回车就好了。</li>
+</ul>
+<p>上面的步骤无误之后一键管理脚本就开始安装SSR了，过一会儿会提示下载文件，输入y后回车即可，然后继续等待。</p>
+<p>安装完成之后会显示服务器配置信息。包括ip、端口、密码、加密、协议、混淆等。当然这些都没必要记下来（如果Linux客户端应该是要手动输入的），配置客户端的时候只需要Xshell最下面出现的SSR链接即可。</p>
+<h4 id="3-6-安装BBR和封禁垃圾端口"><a href="#3-6-安装BBR和封禁垃圾端口" class="headerlink" title="3.6 安装BBR和封禁垃圾端口"></a>3.6 安装BBR和封禁垃圾端口</h4><p>运行bash ssr.sh命令后输入14即可进入安装BBR和封禁垃圾端口的界面。这两个都按提示部署一下即可，注意BBR安装的时候可能会提示“是否终止卸载内核”，这是系统检测到使用了权限较高的操作，因为BBR需要更换内核，所以我们要选择NO。BBR是google开发的拥塞控制算法，亲测有效，安装之后google秒开，不安装延时相当大。</p>
+<h3 id="4-windows客户端部署"><a href="#4-windows客户端部署" class="headerlink" title="4. windows客户端部署"></a>4. windows客户端部署</h3><p>几点说明，首先SSR项目由于某些原因已经从GitHub移除了，所以SSR的PCA模式已经不能使用了。其次，不要使用360浏览器，国内浏览器厂商和GFW有py交易的。所以，推荐使用SSR+chrome插件SwitchyOmega实现只能chromeFQ的目的。这样SSR使用直连模式，由chrome插件决定当前流量是否走代理。如果你有别的用途可以单独在某个软件内部指定代理地址为SSR的地址：127.0.0.1:1080，如果有需要可以留言，我再看看要不要补充吧。</p>
+<h4 id="4-1-配置ShadowsocksR"><a href="#4-1-配置ShadowsocksR" class="headerlink" title="4.1 配置ShadowsocksR"></a>4.1 配置ShadowsocksR</h4><p>配置SSR之前请将所有安全软件以及国产浏览器关闭，否则IP很快就会被封掉！</p>
+<p>ShadowsocksR客户端下载地址<a href="https://github.com/shadowsocksr-backup/shadowsocksr-csharp/releases" target="_blank" rel="noopener">SSRforWindows</a>。SSR不需要安装就可以直接运行，但是会在当前目录生成许多运行时文件，所以建议拷贝ShadowsocksR-4.7.0-win文件夹到电脑里面，然后根据自己系统安装的.net情况运行ShadowsocksR-dotnet4.0.exe或者ShadowsocksR-dotnet2.0.exe。为了方便自己建立一个快捷方式到桌面或者设置开机自启即可。运行SSR之后可以在托盘区看到一个小飞机。</p>
+<p>复制服务器<strong><em>SSR链接</em></strong>到剪贴板（在Xshell中：</p>
+<p>1.输入 bash ssr.sh；2. 输入 5；3. 复制ssr链接），然后右键小飞机剪贴板批量导入ssr://链接…，如图所示：<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E5%AF%BC%E5%85%A5ssr%E8%BF%9E%E6%8E%A5.jpg" alt=""><br>初始的时候软件里会有一台免费的服务器，由于SSR作者已经没有维护了，是不能用的，需要将其删除掉，然后确定。如图所示：<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E5%88%A0%E9%99%A4%E5%85%AC%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8.jpg" alt=""><br>此时已经可以访问google啦！由于服务器是美国的服务器，访问google的时候请使用google.com。其它后缀会慢很多。但是不要急着去玩，后面两步更加重要！！！</p>
+<h4 id="4-2-安装SwitchyOmega-Chromium插件"><a href="#4-2-安装SwitchyOmega-Chromium插件" class="headerlink" title="4.2 安装SwitchyOmega_Chromium插件"></a>4.2 安装SwitchyOmega_Chromium插件</h4><p>在 Chrome 地址栏输入 <code>chrome://extensions</code> 打开扩展程序，点击底部获取更多拓展程序。搜索proxy即可找到SwitchyOmega插件安装之。</p>
+<h4 id="4-3-配置SwitchyOmega插件（以下每一步配置完之后记得应用选项）"><a href="#4-3-配置SwitchyOmega插件（以下每一步配置完之后记得应用选项）" class="headerlink" title="4.3 配置SwitchyOmega插件（以下每一步配置完之后记得应用选项）"></a>4.3 配置SwitchyOmega插件（以下每一步配置完之后记得应用选项）</h4><p>在chrome右上角打开SwitchyOmega配置界面，如图所示：<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/SwitchyOmega%E9%80%89%E9%A1%B9.jpg" alt=""><br>情景模式中的auto switch配置如图所示：注意规则列表规则选择proxy，规则列表格式为AutoProxy<br>填写完成之后需要先更新情景模式使其生效，如图所示：<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/autoSwitch.jpg" alt=""><br>情景模式中的proxy配置如下图所示，其中127.0.0.1:1080为SSR代理地址，只有流向这个地址的流量SSR才会处理。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/proxy.jpg" alt=""><br>设定中的初始情景模式选择auto switch，如图所示。这样当检测到目标地址在GFW列表中的时候chrome会让其走SSR代理。否则直连。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E5%88%9D%E5%A7%8B%E6%83%85%E6%99%AF%E6%A8%A1%E5%BC%8F.jpg" alt=""><br>然后重启chrome，保证SwitchyOmega运行在auto switch模式，否则可能无法正常使用，常见现象有无法访问国外网站、导致访问国内网站速度变慢或无法访问内网等。如图所示：<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E7%A1%AE%E5%AE%9A%E7%8A%B6%E6%80%81.jpg" alt=""></p>
+<h4 id="4-4-修改SSR参数"><a href="#4-4-修改SSR参数" class="headerlink" title="4.4 修改SSR参数"></a>4.4 修改SSR参数</h4><p>刚才没有在配置好SSR之后修改参数的原因在于如果改了参数就访问不了google了，这样安装不了SwitchyOmega插件（其实可以去GitHub下载安装）。所以刚配置好SSR的时候使用了全局模式，保证能访问google，但是这样流量会被国内软件检测到，所以让关闭所有国内软件了。现在要将SSR参数修改为直连模式，等待被chrome调用即可。步骤如下：</p>
+<p>右键小飞机系统代理模式改为“直连模式”，如图所示：<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%E7%9B%B4%E8%BF%9E%E6%A8%A1%E5%BC%8F.jpg" alt=""><br>右键小飞机代理规则改为“全局”，如图所示：<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/%E5%85%A8%E5%B1%80%E4%BB%A3%E7%90%86%E8%A7%84%E5%88%99.jpg" alt=""><br>至此SSRwindows客户端已经配置完成，尽情享受吧！！！</p>
+<p>可以打开安全软件和杀毒软件了！！！</p>
+<h3 id="5-其他客户端部署指南"><a href="#5-其他客户端部署指南" class="headerlink" title="5. 其他客户端部署指南"></a>5. 其他客户端部署指南</h3><blockquote>
+<p>Linux客户端一键安装配置脚本：<a href="https://github.com/the0demiurge/CharlesScripts/blob/master/charles/bin/ssr" target="_blank" rel="noopener">SSRforLinux</a>；</p>
+</blockquote>
+<blockquote>
+<p>MAC客户端：<a href="https://github.com/qinyuhang/ShadowsocksX-NG-R/releases" target="_blank" rel="noopener">SSRforMAC</a>；</p>
+</blockquote>
+<blockquote>
+<p>Android客户端：<a href="https://github.com/shadowsocksr-backup/shadowsocksr-android/releases" target="_blank" rel="noopener">SSRforAndroid</a>。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>翻墙</category>
+      </categories>
+      <tags>
+        <tag>翻墙</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用工具下载</title>
+    <url>/2020/05/27/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E4%B8%8B%E8%BD%BD/</url>
+    <content><![CDATA[<h2 id="中国蚁剑"><a href="#中国蚁剑" class="headerlink" title="中国蚁剑"></a>中国蚁剑</h2><p><strong>1.下载蚁剑加速器</strong><br>从 v2.0.0-beta 版本开始，我们引入了加载器这一概念。用户/开发者只需要下载对应平台的加载器，无需安装额外的环境，即可对源代码进行编辑/执行/调试等操作。可直接运行当前最新的开发版和发行版源代码。</p>
+<a id="more"></a>
+<blockquote>
+<p><a href="https://github.com/AntSwordProject/AntSword-Loader" target="_blank" rel="noopener">点此获取加速器</a><br><strong>注意</strong>：官方加载器仅在 <a href="https://github.com/AntSwordProject/AntSword-Loader" target="_blank" rel="noopener">https://github.com/AntSwordProject/AntSword-Loader</a> 发布，不会在网盘等其它网站发布，下载后请第一时间校验 md5 值<br><strong>2.下载蚁剑源代码并加载</strong><br>点击「<code>初始化</code>」按钮，选择一个空目录作为蚁剑的工作目录，加载器会自动下载源代码。待提示初始化完毕时，重新打开蚁剑加载器，即可看到蚁剑的主界面。<br><strong>3.可能遇到的问题</strong><br>下载或者解压出错<br>遇到这种问题，按照下面步骤手动进行：</p>
+</blockquote>
+<ul>
+<li>手动 clone antsword 源代码, 或者直接点<a href="https://github.com/AntSwordProject/AntSword/archive/master.zip" target="_blank" rel="noopener">这里下载源代码</a>并解压<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/AntSwordProject/AntSword.git</span><br></pre></td></tr></table></figure></li>
+<li>打开加载器，选择源代码所在目录(简单理解为 app.js 所在目录)。<br> 例如app.js路径为：<code>D:\\test\antsword\app.js</code>，那么选择的目录主是 <code>D:\\test\antsword\</code></li>
+</ul>
+<p><strong>特别提醒，不要中文路径</strong></p>
+<h2 id="Phpstudy"><a href="#Phpstudy" class="headerlink" title="Phpstudy"></a>Phpstudy</h2><blockquote>
+<p><a href="https://www.xp.cn/download.html" target="_blank" rel="noopener">官网地址</a></p>
+</blockquote>
+<ul>
+<li><a href="http://public.xp.cn/upgrades/PhpStudy2018.zip" target="_blank" rel="noopener">2018版</a></li>
+<li><a href="http://public.xp.cn/upgrades/JspStudy.zip" target="_blank" rel="noopener">JspStudy</a></li>
+</ul>
+<hr>
+<h2 id="Bandzip-解压软件"><a href="#Bandzip-解压软件" class="headerlink" title="Bandzip(解压软件)"></a>Bandzip(解压软件)</h2><blockquote>
+<p><a href="https://en.softonic.com/download/bandizip/windows/post-download" target="_blank" rel="noopener">下载地址</a></p>
+</blockquote>
+<h2 id="CodeBlocks"><a href="#CodeBlocks" class="headerlink" title="CodeBlocks"></a>CodeBlocks</h2><p><strong>简述</strong>：一款编写c/c++的软件</p>
+<blockquote>
+<p><a href="https://jaist.dl.sourceforge.net/project/codeblocks/Binaries/17.12/Windows/codeblocks-17.12mingw-setup.exe" target="_blank" rel="noopener">Windows17.12</a><br><a href="https://jaist.dl.sourceforge.net/project/codeblocks/Binaries/13.12/MacOS/CodeBlocks-13.12-mac.zip" target="_blank" rel="noopener">Mac13.12</a></p>
+</blockquote>
+<h3 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h3><blockquote>
+<p>链接: <a href="https://pan.baidu.com/s/1sniGc01" target="_blank" rel="noopener">https://pan.baidu.com/s/1sniGc01</a> 密码: 7e9m</p>
+</blockquote>
+<p>1.下载后是一个压缩包，将其解压<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1G6135T7-0.png" alt=""><br>2.进入 CodeBlocks 安装目录（其默认安装目录为 <code>C:\Program Files (x86)\CodeBlocks</code>），依次进入 share –&gt; CodeBlocks 文件夹，然后将解压汉化包得到的 locale 文件夹，复制到 CodeBlocks 文件夹下，如下图所示：<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1G6133P4-1.png" alt=""><br>3. 打开 CodeBlocks，选择 “Settings –&gt; Environmen”，如下图所示：<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1G61333b-2.png" alt=""><br>4.会弹出用于设置 CodeBlocks 的对话框，如下图所示：<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1G6134V9-3.png" alt=""></p>
+<h2 id="Sublime"><a href="#Sublime" class="headerlink" title="Sublime"></a>Sublime</h2><blockquote>
+<p><a href="https://download.sublimetext.com/Sublime%20Text%20Build%203211%20Setup.exe" target="_blank" rel="noopener">视窗</a><br><a href="https://download.sublimetext.com/Sublime%20Text%20Build%203211%20x64%20Setup.exe" target="_blank" rel="noopener">Windows64</a><br><a href="https://www.sublimetext.com/docs/3/linux_repositories.html" target="_blank" rel="noopener">Linux储存库</a></p>
+</blockquote>
+<h2 id="Visul-Studio-code"><a href="#Visul-Studio-code" class="headerlink" title="Visul Studio code"></a>Visul Studio code</h2><blockquote>
+<p><a href="https://vscode.cdn.azure.cn/stable/5763d909d5f12fe19f215cbfdd29a91c0fa9208a/VSCodeUserSetup-x64-1.45.1.exe" target="_blank" rel="noopener">Windows64</a></p>
+</blockquote>
+<h2 id="Win10镜像"><a href="#Win10镜像" class="headerlink" title="Win10镜像"></a>Win10镜像</h2><blockquote>
+<p><a href="https://www.microsoft.com/zh-cn/software-download/windows10" target="_blank" rel="noopener">下载地址</a></p>
+</blockquote>
+<h2 id="油猴用户脚本网站"><a href="#油猴用户脚本网站" class="headerlink" title="油猴用户脚本网站"></a>油猴用户脚本网站</h2><blockquote>
+<p><a href="https://greasyfork.org/zh-CN" target="_blank" rel="noopener">地址链接</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>工具下载</category>
+      </categories>
+      <tags>
+        <tag>工具下载</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>攻防世界-Web</title>
+    <url>/2020/05/21/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C-Web/</url>
+    <content><![CDATA[<h2 id="入口"><a href="#入口" class="headerlink" title="入口"></a>入口</h2><blockquote>
+<p><a href="https://adworld.xctf.org.cn/" target="_blank" rel="noopener">地址链接</a></p>
+</blockquote>
+<a id="more"></a>
+<h2 id="新手练习区"><a href="#新手练习区" class="headerlink" title="新手练习区"></a>新手练习区</h2><h3 id="view-source"><a href="#view-source" class="headerlink" title="view_source"></a>view_source</h3><p>这道题的意思是<strong>查看源代码</strong><br>那我们就直接F12<img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200526121815.png" alt=""></p>
+<h3 id="robots"><a href="#robots" class="headerlink" title="robots"></a>robots</h3><p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/435b3316b40511e9bd1e00163e004e93.png" alt=""></p>
+<h3 id="backup"><a href="#backup" class="headerlink" title="backup"></a>backup</h3><p>此题考查对index.php文件的备份文件名</p>
+<blockquote>
+<p>php的备份有两种：<em>.php~和</em>.php.bak</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200526202400.png" alt=""><br>回车后会下载此文件，然后以<strong>记事本</strong>的形式打开<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200526202500.png" alt=""></p>
+<h3 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h3><blockquote>
+<p><strong>原理</strong><br>​Cookie是当主机访问Web服务器时，由 Web 服务器创建的，将信息存储在用户计算机上的文件。一般网络用户习惯用其复数形式 Cookies，指某些网站为了辨别用户身份、进行 Session 跟踪而存储在用户本地终端上的数据，而这些数据通常会经过加密处理。</p>
+</blockquote>
+<p>1.浏览器按下F12键打开开发者工具，刷新后，在存储一栏，可看到名为look-here的cookie的值为cookie.php<img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200527094901.png" alt=""><br>2.然后根据提示在地址栏中打开<code>cookie.php</code>，此时提示你看回显<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200527095005.png" alt=""><br>3.刷新界面<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200527095055.png" alt=""></p>
+<h3 id="disabled-button"><a href="#disabled-button" class="headerlink" title="disabled_button"></a>disabled_button</h3><p>常规思路，首先查看源码，找到对应的点<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200527115922.png" alt=""><br>将disabled-&gt;abled，此时发现可以点击，得到flag</p>
+<h3 id="weak-auth"><a href="#weak-auth" class="headerlink" title="weak_auth"></a>weak_auth</h3><p>本题用到工具<a href="https://portswigger.net/burp" target="_blank" rel="noopener">Burpsuite</a></p>
+<blockquote>
+<p><strong>注意</strong>：Burpsuite的打开需要配置Java环境</p>
+</blockquote>
+<p>选择第三款下载就行<img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200527120722.png" alt=""><br>Burp抓包需要更改本地端口为8080<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200527121334.png" alt=""><br>根据提示用户名为admin，那么密码随便输入一个之后进行暴力破解<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200527122228.png" alt=""><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200527122549.png" alt=""></p>
+<blockquote>
+<p>关于一些爆破的字典连接<a href="https://github.com/rootphantomer/Blasting_dictionary" target="_blank" rel="noopener">https://github.com/rootphantomer/Blasting_dictionary</a><br>把常用密码这个字典下载到本地，在Loadhouse中选择这个字典</p>
+</blockquote>
+<p>添加完字典后点击Start attack</p>
+<p>返回结果，发现长度上不一样的，就是密码了<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200527134052.png" alt=""><br>登陆后得到<strong>flag</strong></p>
+<h3 id="simple-php"><a href="#simple-php" class="headerlink" title="simple_php"></a>simple_php</h3><p>1.打开页面，进行代码审计，发现同时满足 $a==0 和 $a 时，显示flag1。</p>
+<p>2.php中的弱类型比较会使’abc’ == 0为真，所以输入a=abc时，可得到flag1，如图所示。（abc可换成任意字符）。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/1.png" alt=""><br>3.is_numeric() 函数会判断如果是数字和数字字符串则返回 TRUE，否则返回 FALSE,且php中弱类型比较时，会使(‘1234a’ == 1234)为真，所以当输入a=abc&amp;b=1235a，可得到flag2，如图所示。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/2.png" alt=""></p>
+<h3 id="get-post"><a href="#get-post" class="headerlink" title="get_post"></a>get_post</h3><p>直接用Hackbar搞定<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/20200527161249.png" alt=""></p>
+<h3 id="xff-referer"><a href="#xff-referer" class="headerlink" title="xff_referer"></a>xff_referer</h3><p><strong>[原理]</strong><br>X-Forwarded-For:简称XFF头，它代表客户端，也就是HTTP的请求端真实的IP，只有在通过了HTTP 代理或者负载均衡服务器时才会添加该项</p>
+<p>HTTP Referer是header的一部分，当浏览器向web服务器发送请求的时候，一般会带上Referer，告诉服务器我是从哪个页面链接过来的<br><strong>[步骤]</strong><br>1.打开firefox和burp，使用burp对firefox进行代理拦截，在请求头添加X-Forwarded-For: 123.123.123.123，然后放包<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/xff.png" alt=""><br>2.接着继续在请求头内添加Referer:<a href="https://www.google.com，可获得flag" target="_blank" rel="noopener">https://www.google.com，可获得flag</a><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/xff1.png" alt=""></p>
+<h3 id="webshell"><a href="#webshell" class="headerlink" title="webshell"></a>webshell</h3><p>本题我使用了中国蚁剑<br>打开环境后发现这相当于一句话连接木马，密码为<strong>shell</strong><br>于是输入ip地址测试连接<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200717104357.png" alt=""><br>连接成功后添加这个数据，打开后发现里面有一个<code>flag.txt</code>文件，打开后发现flag<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200717104604.png" alt=""></p>
+<h3 id="command-execution"><a href="#command-execution" class="headerlink" title="command_execution"></a>command_execution</h3><blockquote>
+<p><strong>点击打开</strong><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/command_execution.pdf" alt=""></p>
+</blockquote>
+<h3 id="simple-js"><a href="#simple-js" class="headerlink" title="simple_js"></a>simple_js</h3><p>1.按照页面回显结果和源码判断，不论输入任何密码，中都会跳转到错误密码<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200717120516.png" alt=""><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200717120539.png" alt=""><br>2.而真正的密码在</p>
+<blockquote>
+<p>String[“fromCharCode”](dechiffre(“\x35\x35\x2c\x35\x36\x2c\x35\x34\x2<br>c\x37\x39\x2c\x31\x31\x35\x2c\x36\x39\x2c\x31\x31\x34\x2c\x31\x31\x36<br>\x2c\x31\x30\x37\x2c\x34\x39\x2c\x35\x30”));</p>
+</blockquote>
+<p>通过判断 编码方式为 base16.</p>
+<p>通过解码或的一个数组：[55,56,54,79,115,69,114,116,107,49,50]</p>
+<p>通过 ASCII 对数组再次进行解码得到字符串：<code>786OsErtk12</code></p>
+<h2 id="高手进阶区"><a href="#高手进阶区" class="headerlink" title="高手进阶区"></a>高手进阶区</h2><h3 id="baby-web"><a href="#baby-web" class="headerlink" title="baby_web"></a>baby_web</h3><p>题目描述想想初始页面是哪个，但最终显示给我们的页面为111.198.29.45:32344/1.php。就能猜到中间发生了跳转。打开F12控制台查看详情。就能发现flag。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200717134151.png" alt=""></p>
+<h3 id="Training-WWW-Robots"><a href="#Training-WWW-Robots" class="headerlink" title="Training-WWW-Robots"></a>Training-WWW-Robots</h3><p>在地址栏后加上robots.txt，访问后发现存在fl0g.php<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200717135531.png" alt=""><br>然后开始访问fl0g.php,然后得到flag<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ%E5%9B%BE%E7%89%8720200717135814.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>Web</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客搭建教程</title>
+    <url>/2020/05/14/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入<a href="https://colsrch.top/go.html?u=https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a>进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
+<a id="more"></a>
+<h2 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h2><p>安装Git<br>安装Node.js<br>安装cnpm<br>安装Hexo<br>生成SSH添加到Coding<br>将hexo部署到Coding<br>设置个人域名<br>发布文章<br>配置多终端工作</p>
+<hr>
+<h2 id="博客环境搭建"><a href="#博客环境搭建" class="headerlink" title="博客环境搭建"></a>博客环境搭建</h2><blockquote>
+<p>修改配置文件要用到的软件（可选）：</p>
+</blockquote>
+<ul>
+<li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a>（适合有开发基础的程序员，非常好用）</li>
+<li>Sublime Text3可免费使用，<a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener">百度网盘</a>（提取码：mh0y）</li>
+<li><a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener">NodePad++</a>7.8.1（最新的，也可以在官网选择其他版本）<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><blockquote>
+<p>下载地址:<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
+</blockquote>
+</li>
+</ul>
+<p>点这里即可下载最新版本，如果你的下载速度比较慢可以选择下面的链接下载</p>
+<blockquote>
+<p><a href="https://www.lanzous.com/i9s7tib" target="_blank" rel="noopener">https://www.lanzous.com/i9s7tib</a></p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_08-57-32.png" alt=""><br>运行安装包，选择合适的安装位置，然后点Next，后面的安装步骤全部只要点Next就行了，不需要我们多余配置。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/jqTCDk6YSbwQOVz.webp" alt=""></p>
+<h2 id="安装Noide-js"><a href="#安装Noide-js" class="headerlink" title="安装Noide.js"></a>安装Noide.js</h2><blockquote>
+<p>下载地址:<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a></p>
+</blockquote>
+<p>选择windows安装包.msi安装，下载完成后运行安装包，我们默认选择c盘，选择Add to PATH然后点Next继续就行了。</p>
+<h3 id="验证node-js是否安装配置成功"><a href="#验证node-js是否安装配置成功" class="headerlink" title="验证node.js是否安装配置成功"></a>验证node.js是否安装配置成功</h3><p>我们安装完Git后，在桌面右键会有Git Bash Here，我们直接点开<img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/s1YhxtEILOlk4X.webp" alt=""><br>会出来一个终端，我们分别执行下面的命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p>如果输出了版本号，那么证明配置成功，如果没有版本号，请重新安装nodejs（检查是否勾选Add to Path），或者手动为nodejs添加环境变量</p>
+<h2 id="安装cpm"><a href="#安装cpm" class="headerlink" title="安装cpm"></a>安装cpm</h2><p>在git bash里面执行下面的命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p><strong>检查cnpm是否安装成功</strong><br>执行如下命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
+<p>如果输出版本号就是安装成功了</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>在git bash执行下面的命令安装hexo</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h2><p>选择一个文件夹，然后右键打开git bash</p>
+<p>例如：我在F盘新建了一个blog文件夹，就在blog文件夹下打开git bash</p>
+<p>然后执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>到<strong>Install dependencies</strong>的时候你可能会卡住，这是大多数人基本都会遇到的</p>
+<p>我们只需要在这里的时候结束命令，按Ctrl + c就可以结束命令</p>
+<p>然后执行下面这个命令，就可以使用国内的镜像为你完成博客的初始化工作</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其他方法：<br>git clone <a href="https://e.coding.net/huanhao/hexoblog.git" target="_blank" rel="noopener">https://e.coding.net/huanhao/hexoblog.git</a><br>cnpm install</p>
+</blockquote>
+<p>然后继续下面的步骤<br>等待命令完成后，就完成了初始化，现在就可以预览我们的博客了<br>执行下面这个命令<br><strong>注意</strong>：不要结束命令或者关闭终端</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-31-47.jmi628mj35e.png" alt=""><br>然后会出来一段http开头的网址，我们复制下来然后在浏览器打开,就会出现这么一个页面了<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-33-55.tyszma65r9.png" alt=""></p>
+<hr>
+<h2 id="如何下载主题"><a href="#如何下载主题" class="headerlink" title="如何下载主题"></a>如何下载主题</h2><h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h3><p>打开主题的项目地址后，点击<em>Clone or download</em><br>然后复制https开头的地址<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-46-02.gnmyl5b7s2.png" alt=""><br>然后在你的博客文件夹下面打开git bash<br><strong>执行：</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone 复制的地址 themes/主题名字</span><br></pre></td></tr></table></figure>
+<p>如图：<img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-50-23.o7ukcdqwa8e.png" alt=""><br><strong>现在给你解释一下这个命令</strong><br>git clone 代表克隆，后面接上一串下载地址，最后面的themes/next是把文件夹下载到主题目录下，并把主题文件命名为next</p>
+<hr>
+<h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h3><p>如果你觉得比较麻烦，还有第二个办法<br>打开主题项目地址，然后点击Clone or download，然后点击Download ZIP<br>这样可以下载主题文件压缩包，前提是你已经登入了github（没有账号的，请自己注册一下）<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-53-14.hd54gibpilh.png" alt=""><br>然后解压压缩包，把文件夹放在博客目录下的themes目录，并把文件夹命名为主题的名字<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-56-33.xhx8o5z5d9.png" alt=""></p>
+<hr>
+<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>在博客的目录下有一个叫_config.yml的文件，将它打开<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_10-01-51.gwst228nama.png" alt=""><br>找到<em>themes</em>这一行，然后将主题名字修改为next<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_10-02-23.58o49hkjdki.png" alt=""><br>这样的话，主题就成功更换了</p>
+<hr>
+<h2 id="预览主题"><a href="#预览主题" class="headerlink" title="预览主题"></a>预览主题</h2><p>在博客目录打开git bash<br>执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>还是会出现一段浏览地址，我们在浏览器打开就行了<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_10-04-16.2dvd68y21dm.png" alt=""></p>
+<blockquote>
+<p>注意：有些主题你更换之后是暂时无法预览的，因为有的主题还需要安装它需要的依赖，这一般都会在主题的文档里面提到，只有安装它的依赖之后才可以正常预览</p>
+</blockquote>
+<hr>
+<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><p>我们需要认识两个文件</p>
+<ul>
+<li>站点配置文件<br>指的是博客根目录下的<code>_config.yml</code><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_10-01-51.gwst228nama.png" alt=""></li>
+<li>主题配置文件<br>指的是某个主题下的<code>_config.yml</code><br>它们的名字都叫<code>_config.yml</code>但是你不能弄混淆<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_10-11-13.qayjeoclrer.png" alt=""><br>在我们看主题文档配置的时候，是必须要分清这两个概念的，不然会报错<h2 id="Coding"><a href="#Coding" class="headerlink" title="Coding"></a>Coding</h2>注册一个coding的账号，这里不做演示<blockquote>
+<p><a href="https://coding.net/user" target="_blank" rel="noopener">https://coding.net/user</a></p>
+</blockquote>
+</li>
+</ul>
+<p>然后按照图片新建一个项目<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-25-47.8py42ifi1g3.png" alt=""><br>选择devops<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-25-58.sm3tn54wui.png" alt=""><br>填入相关信息，记得勾选<strong>启用<code>README.cd</code>文件初始化项目</strong><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-26-29.u2pyq6c928.png" alt=""><br>然后完成创建</p>
+<blockquote>
+<p>我们暂时不能直接上传，需要进行一些配置，如下：</p>
+</blockquote>
+<p>接下来需要我们创建一个git秘钥<br>打开git bash（不要求在哪个目录）<br>执行： “这里面是你的邮箱”<br>不管出现什么信息，你只需要回车就可以了</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C “your_email@youremail.com“</span><br></pre></td></tr></table></figure>
+<p>然后执行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>会输出你的秘钥，我们复制输出信息就行了<br>然后点击头像，打开个人设置–选择SSH公钥–新增公钥<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-33-54.hlvuud9w9ns.png" alt=""><br>然后将你复制的秘钥粘贴进去，记得勾选永久有效<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-34-42.zd3za7e4a6e.png" alt=""></p>
+<hr>
+<p>然后打开git bash<br><strong>执行：</strong></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh -T git@git.coding.net</span><br></pre></td></tr></table></figure>
+<p>会提示你下面这个，输入yes回车就行了</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span><br></pre></td></tr></table></figure>
+<p>接下来打开你的项目选择SSH，然后复制右边git开头的地址<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-38-33.r8subsc5h7k.png" alt=""></p>
+<ul>
+<li><p>打开站点配置文件</p>
+</li>
+<li><p>修改deploy信息</p>
+<blockquote>
+<p>deploy:<br>type: git<br>repo: 你复制的地址<br>branch: master</p>
+</blockquote>
+</li>
+</ul>
+<p>例如：<img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-44-14.it2uh45m4jq.png" alt=""><br>在博客根目录下打开git bash<br>分别执行下面的命令：</p>
+<ul>
+<li>yourname是你的名字</li>
+<li>youremail是你的邮箱<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name "yourname"</span><br><span class="line">git config --global user.email "youremail"</span><br></pre></td></tr></table></figure>
+然后安装上传插件<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><blockquote>
+<p>以上的配置完成之后，就可以上传了</p>
+</blockquote>
+<p>在博客根目录下打开git bash，执行下面的命令就可以上传了</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-49-05.lkmgvzcdzwh.png" alt=""><br>然后打开项目，打开构建与部署–静态网站–立即发布静态网站</p>
+<blockquote>
+<p>注意：coding需要实名认证，只需要你输入身份证号就可以了，不用担心泄露隐私，因为coding现在是腾讯的</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-50-05.b57ma6w5win.png" alt=""><br>我们只要填写网站名称就行了，然后保存<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-50-36.6fwfau0xu0w.png" alt=""><br>因为是刚构建的网站，所以要手动部署一下，以后上传就不需要手动部署<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/img/Snipaste_2020-02-29_12-55-02.ki4y7hiyo2b.png" alt=""><br>然后访问所给的地址，那个就是我们网站的地址了<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-56-21.b5y903lp4hk.png" alt=""><br>之后每次修改完博客要上传的时候，只需执行上传命令</p>
+<blockquote>
+<p>注：github部署不做说明</p>
+</blockquote>
+<hr>
+<h2 id="git分支进行多终端工作"><a href="#git分支进行多终端工作" class="headerlink" title="git分支进行多终端工作"></a>git分支进行多终端工作</h2><p>问题来了，如果你现在在自己的笔记本上写的博客，部署在了网站上，那么你在家里用台式机，或者实验室的台式机，发现你电脑里面没有博客的文件，或者要换电脑了，最后不知道怎么移动文件，怎么办？</p>
+<p>在这里我们就可以利用git的分支系统进行多终端工作了，这样每次打开不一样的电脑，只需要进行简单的配置和在Coding上把文件同步下来，就可以无缝操作了。</p>
+<h3 id="机制"><a href="#机制" class="headerlink" title="机制"></a>机制</h3><p>机制是这样的，由于<code>hexo d</code>上传部署到Coding的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。<br>也就是上传的是在本地目录里自动生成的<code>.deploy_git</code>里面。<br>其他文件 ，包括我们写在source 里面的，和配置文件，主题文件，都没有上传到Coding<br>所以可以利用git的分支管理，将源文件上传到Coding的另一个分支即可。</p>
+<h3 id="上传分支"><a href="#上传分支" class="headerlink" title="上传分支"></a>上传分支</h3><p>首先，先在Coding上新建一个hexo分支<br>然后在这个仓库的分支设置中，选择默认分支为hexo分支（这样每次同步的时候就不用指定分支，比较方便）。<br>然后在本地的任意目录下，打开git bash</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone git@e.coding.net:eawakeofi/Colsrch/Colsrch.git</span><br></pre></td></tr></table></figure>
+<p>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。<br>接下来在克隆到本地的Coding中，把除了<code>.git</code> 文件夹外的所有文件都删掉<br>把之前我们写的博客源文件全部复制过来，除了<code>.deploy_git</code>。这里应该说一句，复制过来的源文件应该有一个<code>.gitignore</code>，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
+<figure class="highlight x86asm"><table><tr><td class="code"><pre><span class="line"><span class="meta">.DS_Store</span></span><br><span class="line">Thumbs<span class="number">.</span><span class="built_in">db</span></span><br><span class="line"><span class="built_in">db</span><span class="number">.</span>json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line"><span class="meta">public</span>/</span><br><span class="line"><span class="meta">.deploy</span>*/</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
+</blockquote>
+<p>而后</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit –m "add branch"</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>这样就上传完了，可以去你的Coding上看一看hexo分支有没有上传上去，其中<code>node_modules</code>、<code>public</code>、<code>db.json</code>已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
+<h3 id="更换电脑操作"><a href="#更换电脑操作" class="headerlink" title="更换电脑操作"></a>更换电脑操作</h3><p>一样的，跟之前的环境搭建一样，</p>
+<ul>
+<li>安装git<ul>
+<li>设置git全局邮箱和用户名</li>
+<li>设置ssh key</li>
+</ul>
+</li>
+<li>安装nodejs</li>
+<li>安装hexo<blockquote>
+<p>但是已经不需要初始化了</p>
+</blockquote>
+</li>
+</ul>
+<p>直接在任意文件夹下，</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone git@………………</span><br></pre></td></tr></table></figure>
+<p>然后进入克隆到的文件夹：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>生成，部署：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>然后就可以开始写你的新博客了</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new "文章名"</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>不要忘了，每次写完最好都把源文件上传一下</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m "xxx"</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<h2 id="Coding-page和github-page实现国内外分流"><a href="#Coding-page和github-page实现国内外分流" class="headerlink" title="Coding page和github page实现国内外分流"></a>Coding page和github page实现国内外分流</h2><h3 id="1-申请github账户，新建项目"><a href="#1-申请github账户，新建项目" class="headerlink" title="1. 申请github账户，新建项目"></a>1. 申请github账户，新建项目</h3><p>先申请一个账户，然后创建新的项目，这一步项目名称应该是随意的，如若是个人主页则为username.github.io。</p>
+<h3 id="2-添加ssh-key"><a href="#2-添加ssh-key" class="headerlink" title="2. 添加ssh key"></a>2. 添加ssh key</h3><p>有关SSH的添加方法我在之前的文章已经说过了。<a href="https://colsrch.top/go.html?u=https://colsrch.top/2020/04/16/git-command/" target="_blank" rel="noopener">Git常用命令</a></p>
+<h3 id="3-修改-config-yml"><a href="#3-修改-config-yml" class="headerlink" title="3. 修改_config.yml"></a>3. 修改_config.yml</h3><p>hexo官方文档是这样的：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  message: [message]</span><br><span class="line">  repo:</span><br><span class="line">    github: &lt;repository url&gt;,[branch]</span><br><span class="line">    coding: &lt;repository url&gt;,[branch]</span><br></pre></td></tr></table></figure>
+<p>那么，我们只需要：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    coding: git@e.coding.net:eawakeofi/Colsrch/Colsrch.git,master</span><br><span class="line">    github: git@github.com:1332925715/1332925715.github.io.git,master</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="4-部署"><a href="#4-部署" class="headerlink" title="4. 部署"></a>4. 部署</h3><p>保存一下，直接</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>这样就可以在github的项目上看到你部署的文件了。</p>
+<h3 id="5-开启github-pages服务，绑定域名"><a href="#5-开启github-pages服务，绑定域名" class="headerlink" title="5. 开启github pages服务，绑定域名"></a>5. 开启github pages服务，绑定域名</h3><h3 id="6-腾讯云添加解析"><a href="#6-腾讯云添加解析" class="headerlink" title="6. 腾讯云添加解析"></a>6. 腾讯云添加解析</h3><p>这个时候就可以把添加github的解析为境外了，Coding的解析为默认。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>首先感谢<a href="https://colsrch.top/" target="_blank" rel="noopener">Colsrch</a>制作的hexo博客搭建教程及<a href="https://colsrch.top/go.html?u=https://me.csdn.net/sinat_37781304" target="_blank" rel="noopener">zjufangzh</a>的多终端编辑和分流部署教程</p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><blockquote>
+<p><a href="https://yafine-blog.cn/posts/4ab2.html" target="_blank" rel="noopener">地址链接</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+</search>

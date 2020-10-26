@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html>
+<head hexo-theme='https://volantis.js.org/#3.0-beta2'>
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+    
+  
+  <!-- 渲染优化 -->
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- 页面元数据 -->
+  
+  <title>Hexo博客搭建教程 - </title>
+  
+    <meta name="keywords" content="Hexo">
+  
+
+  
+    <meta name="description" content="前言Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。">
+  
+
+  <!-- feed -->
+  
+
+  <!-- import meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+  
+
+  
+
+  <!-- import link -->
+  
+
+  
+  
+    
+<link rel="stylesheet" href="/css/style.css">
+
+  
+
+  
+  
+</head>
+
+<body>
+  
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post' style="display: none;">
+      <div class='cover-body'>
+  <div class='a'>
+    
+    
+      <p class="title">Ronin-xu</p>
+    
+    
+      <p class="subtitle">要么全部带走,要么一无所有...</p>
+    
+  </div>
+  <div class='b'>
+    <div class='menu navigation featured'>
+      <ul class='cover-list-h'>
+        
+          
+            <li>
+              <a class="nav home"
+                href="/"
+                
+                
+                id="home">
+                <i class='fas fa-book fa-fw'></i>主页
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://www.bilibili.com/"
+                
+                
+                id="https:wwwbilibilicom">
+                <i class='fa fa-play-circle fa-fw'></i>B站
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="/1/index.html"
+                
+                
+                id="1indexhtml">
+                <i class='fas fa-venus-double fa-fw'></i>噗
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://github.com/Ronin-xu/Ronin-xu.github.io"
+                
+                  rel="external nofollow noopener noreferrer"
+                
+                
+                  target="_blank"
+                
+                id="https:githubcomRonin-xuRonin-xugithubio">
+                <i class='fas fa-file-code fa-fw'></i>源码
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://volantis.js.org/contributors/"
+                
+                
+                id="https:volantisjsorgcontributors">
+                <i class='fas fa-handshake fa-fw'></i>鸣谢
+              </a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+      <div class="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+    </cover>
+    <header class="l_header shadow blur">
+  <div class='container'>
+  <div class='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h' id="pjax-header-nav-list">
+        <li><a class="s-comment fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+          
+          
+            Ronin-xu
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-home fa-fw'></i>首页
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  <i class='fas fa-cube fa-fw'></i>解码
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=http://ctf.ssleye.com/base64.html
+                  
+                  
+                  
+                    id="http:ctfssleyecombase64html"
+                  >
+                  <i class='fa fa-database fa-fw'></i>Base16/32/64
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  <i class='fa-fw fa fa-book fa-fw fa-fw'></i>找文章
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-bars fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/鸟哥的Linux私房菜-基础学习篇.pdf
+                  
+                  
+                  
+                    id="https:cdnjsdelivrnetghRonin-xucdn鸟哥的Linux私房菜-基础学习篇pdf"
+                  >
+                  <i class='fa fa-file fa-fw'></i>Linux私房菜
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://colsrch.coding.net/s/28c2a691-0913-4831-84ca-91135c035a0d
+                  
+                  
+                  
+                    id="https:colsrchcodingnets28c2a691-0913-4831-84ca-91135c035a0d"
+                  >
+                  <i class='fa fa-file fa-fw'></i>Web安全深度剖析
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://colsrch.coding.net/s/e07a7641-e5f9-4373-a70e-a3f36d60d3b3
+                  
+                  
+                  
+                    id="https:colsrchcodingnetse07a7641-e5f9-4373-a70e-a3f36d60d3b3"
+                  >
+                  <i class='fa fa-file fa-fw'></i>白帽子讲Web安全
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  <i class='fas fa-user-circle fa-fw'></i>管理员
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://xuguoguo.avosapps.us
+                  
+                  
+                  
+                    id="https:xuguoguoavosappsus"
+                  >
+                  <i class='fa fa-comments fa-fw'></i>评论管理
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://colsrch.cloudstudio.net/dashboard/workspace
+                  
+                  
+                  
+                    id="https:colsrchcloudstudionetdashboardworkspace"
+                  >
+                  <i class='far fa-edit fa-fw fa-fw'></i>云端编辑
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  <i class='fas fa-ellipsis-v fa-fw'></i>更多
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-exclamation-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <hr>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://www.itrhx.com/box/
+                  
+                  
+                  
+                    id="https:wwwitrhxcombox"
+                  >
+                  <i class='fas fa-briefcase fa-fw'></i>百宝箱
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=http://fanyi.youdao.com/
+                  
+                  
+                  
+                    id="http:fanyiyoudaocom"
+                  >
+                  <i class='fa fa-american-sign-language-interpreting fa-fw'></i>在线翻译
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+        </form>
+      </div>
+
+			<ul class='switcher nav-list-h'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-home fa-fw'></i>首页
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  <i class='fas fa-cube fa-fw'></i>解码
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=http://ctf.ssleye.com/base64.html
+                  
+                  
+                  
+                    id="http:ctfssleyecombase64html"
+                  >
+                  <i class='fa fa-database fa-fw'></i>Base16/32/64
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  <i class='fa-fw fa fa-book fa-fw fa-fw'></i>找文章
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-bars fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/鸟哥的Linux私房菜-基础学习篇.pdf
+                  
+                  
+                  
+                    id="https:cdnjsdelivrnetghRonin-xucdn鸟哥的Linux私房菜-基础学习篇pdf"
+                  >
+                  <i class='fa fa-file fa-fw'></i>Linux私房菜
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://colsrch.coding.net/s/28c2a691-0913-4831-84ca-91135c035a0d
+                  
+                  
+                  
+                    id="https:colsrchcodingnets28c2a691-0913-4831-84ca-91135c035a0d"
+                  >
+                  <i class='fa fa-file fa-fw'></i>Web安全深度剖析
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://colsrch.coding.net/s/e07a7641-e5f9-4373-a70e-a3f36d60d3b3
+                  
+                  
+                  
+                    id="https:colsrchcodingnetse07a7641-e5f9-4373-a70e-a3f36d60d3b3"
+                  >
+                  <i class='fa fa-file fa-fw'></i>白帽子讲Web安全
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  <i class='fas fa-user-circle fa-fw'></i>管理员
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://xuguoguo.avosapps.us
+                  
+                  
+                  
+                    id="https:xuguoguoavosappsus"
+                  >
+                  <i class='fa fa-comments fa-fw'></i>评论管理
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://colsrch.cloudstudio.net/dashboard/workspace
+                  
+                  
+                  
+                    id="https:colsrchcloudstudionetdashboardworkspace"
+                  >
+                  <i class='far fa-edit fa-fw fa-fw'></i>云端编辑
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" 
+                  
+                  
+                  >
+                  <i class='fas fa-ellipsis-v fa-fw'></i>更多
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-exclamation-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <hr>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=https://www.itrhx.com/box/
+                  
+                  
+                  
+                    id="https:wwwitrhxcombox"
+                  >
+                  <i class='fas fa-briefcase fa-fw'></i>百宝箱
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="flat-box" href=http://fanyi.youdao.com/
+                  
+                  
+                  
+                    id="http:fanyiyoudaocom"
+                  >
+                  <i class='fa fa-american-sign-language-interpreting fa-fw'></i>在线翻译
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</header>
+
+  </div>
+  
+
+
+  <div class="l_body nocover">
+    <div class='body-wrapper' id="pjax-container">
+      
+        <!--此文件用来存放一些不方便取值的变量-->
+<!--思路大概是将值藏到重加载的区域内-->
+
+
+
+<div id="pjax-data" style="display: none">
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">Hexo博客搭建教程</div>
+  <div id="pjax-enable-cover">true</div>
+  
+  <div id="valine-path">none</div>
+  <div id="valine-placeholder">none</div>
+  
+  
+</div>
+
+
+<script>
+  // 处理封面 此时 jquery 还没加载
+  if ("none" == "none") { // 移除封面
+    document.getElementsByClassName('cover')[0].style.display = "none";
+    document.getElementsByClassName('l_body')[0].classList.add("nocover");
+    document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
+  } else {
+    if ("none" == "blog") { // 半屏
+      document.getElementsByClassName('cover')[0].classList.remove("full");
+      document.getElementsByClassName('cover')[0].classList.add("half");
+      document.getElementsByClassName('scroll-down')[0].style.display = "none";
+    } else if ("none" == "docs") { // 全屏
+      document.getElementsByClassName('cover')[0].classList.remove("half");
+      document.getElementsByClassName('cover')[0].classList.add("full");
+      document.getElementsByClassName('scroll-down')[0].style.display = "";
+    }
+    document.getElementsByClassName('cover')[0].style.display = "";
+    document.getElementsByClassName('l_body', 'show')[0].classList.remove("nocover");
+    document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.remove("show");
+  }
+</script>
+
+      
+      
+
+<div class='l_main'>
+  
+
+  
+    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+      
+
+
+  <section class='meta'>
+    
+      
+      
+      <div class="meta" id="header-meta">
+        
+          
+  <h1 class="title">
+    <a href="/2020/05/14/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+      Hexo博客搭建教程
+    </a>
+  </h1>
+
+
+        
+        <div class='new-meta-box'>
+          
+            
+          
+            
+              
+<div class='new-meta-item author'>
+  <a href="https://Ronin-xu.github.io" rel="nofollow">
+    <img no-lazy src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/avatar.jpg">
+    <p>Mr. Z</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/Hexo/' rel="nofollow">
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <p>Hexo</p>
+    </a>
+  </div>
+
+
+            
+          
+            
+              <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年5月14日</p>
+  </a>
+</div>
+
+            
+          
+            
+          
+        </div>
+        
+          <hr>
+        
+      </div>
+    
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入<a href="https://colsrch.top/go.html?u=https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo官网</a>进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。</p>
+<a id="more"></a>
+<h2 id="Hexo搭建步骤"><a href="#Hexo搭建步骤" class="headerlink" title="Hexo搭建步骤"></a>Hexo搭建步骤</h2><p>安装Git<br>安装Node.js<br>安装cnpm<br>安装Hexo<br>生成SSH添加到Coding<br>将hexo部署到Coding<br>设置个人域名<br>发布文章<br>配置多终端工作</p>
+<hr>
+<h2 id="博客环境搭建"><a href="#博客环境搭建" class="headerlink" title="博客环境搭建"></a>博客环境搭建</h2><blockquote>
+<p>修改配置文件要用到的软件（可选）：</p>
+</blockquote>
+<ul>
+<li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a>（适合有开发基础的程序员，非常好用）</li>
+<li>Sublime Text3可免费使用，<a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener">百度网盘</a>（提取码：mh0y）</li>
+<li><a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener">NodePad++</a>7.8.1（最新的，也可以在官网选择其他版本）<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><blockquote>
+<p>下载地址:<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
+</blockquote>
+</li>
+</ul>
+<p>点这里即可下载最新版本，如果你的下载速度比较慢可以选择下面的链接下载</p>
+<blockquote>
+<p><a href="https://www.lanzous.com/i9s7tib" target="_blank" rel="noopener">https://www.lanzous.com/i9s7tib</a></p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_08-57-32.png" alt=""><br>运行安装包，选择合适的安装位置，然后点Next，后面的安装步骤全部只要点Next就行了，不需要我们多余配置。<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/jqTCDk6YSbwQOVz.webp" alt=""></p>
+<h2 id="安装Noide-js"><a href="#安装Noide-js" class="headerlink" title="安装Noide.js"></a>安装Noide.js</h2><blockquote>
+<p>下载地址:<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">http://nodejs.cn/download/</a></p>
+</blockquote>
+<p>选择windows安装包.msi安装，下载完成后运行安装包，我们默认选择c盘，选择Add to PATH然后点Next继续就行了。</p>
+<h3 id="验证node-js是否安装配置成功"><a href="#验证node-js是否安装配置成功" class="headerlink" title="验证node.js是否安装配置成功"></a>验证node.js是否安装配置成功</h3><p>我们安装完Git后，在桌面右键会有Git Bash Here，我们直接点开<img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/s1YhxtEILOlk4X.webp" alt=""><br>会出来一个终端，我们分别执行下面的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p>如果输出了版本号，那么证明配置成功，如果没有版本号，请重新安装nodejs（检查是否勾选Add to Path），或者手动为nodejs添加环境变量</p>
+<h2 id="安装cpm"><a href="#安装cpm" class="headerlink" title="安装cpm"></a>安装cpm</h2><p>在git bash里面执行下面的命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p><strong>检查cnpm是否安装成功</strong><br>执行如下命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
+<p>如果输出版本号就是安装成功了</p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>在git bash执行下面的命令安装hexo</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h2><p>选择一个文件夹，然后右键打开git bash</p>
+<p>例如：我在F盘新建了一个blog文件夹，就在blog文件夹下打开git bash</p>
+<p>然后执行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>到<strong>Install dependencies</strong>的时候你可能会卡住，这是大多数人基本都会遇到的</p>
+<p>我们只需要在这里的时候结束命令，按Ctrl + c就可以结束命令</p>
+<p>然后执行下面这个命令，就可以使用国内的镜像为你完成博客的初始化工作</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>其他方法：<br>git clone <a href="https://e.coding.net/huanhao/hexoblog.git" target="_blank" rel="noopener">https://e.coding.net/huanhao/hexoblog.git</a><br>cnpm install</p>
+</blockquote>
+<p>然后继续下面的步骤<br>等待命令完成后，就完成了初始化，现在就可以预览我们的博客了<br>执行下面这个命令<br><strong>注意</strong>：不要结束命令或者关闭终端</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-31-47.jmi628mj35e.png" alt=""><br>然后会出来一段http开头的网址，我们复制下来然后在浏览器打开,就会出现这么一个页面了<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-33-55.tyszma65r9.png" alt=""></p>
+<hr>
+<h2 id="如何下载主题"><a href="#如何下载主题" class="headerlink" title="如何下载主题"></a>如何下载主题</h2><h3 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h3><p>打开主题的项目地址后，点击<em>Clone or download</em><br>然后复制https开头的地址<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-46-02.gnmyl5b7s2.png" alt=""><br>然后在你的博客文件夹下面打开git bash<br><strong>执行：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 复制的地址 themes/主题名字</span><br></pre></td></tr></table></figure>
+<p>如图：<img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-50-23.o7ukcdqwa8e.png" alt=""><br><strong>现在给你解释一下这个命令</strong><br>git clone 代表克隆，后面接上一串下载地址，最后面的themes/next是把文件夹下载到主题目录下，并把主题文件命名为next</p>
+<hr>
+<h3 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h3><p>如果你觉得比较麻烦，还有第二个办法<br>打开主题项目地址，然后点击Clone or download，然后点击Download ZIP<br>这样可以下载主题文件压缩包，前提是你已经登入了github（没有账号的，请自己注册一下）<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-53-14.hd54gibpilh.png" alt=""><br>然后解压压缩包，把文件夹放在博客目录下的themes目录，并把文件夹命名为主题的名字<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_09-56-33.xhx8o5z5d9.png" alt=""></p>
+<hr>
+<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>在博客的目录下有一个叫_config.yml的文件，将它打开<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_10-01-51.gwst228nama.png" alt=""><br>找到<em>themes</em>这一行，然后将主题名字修改为next<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_10-02-23.58o49hkjdki.png" alt=""><br>这样的话，主题就成功更换了</p>
+<hr>
+<h2 id="预览主题"><a href="#预览主题" class="headerlink" title="预览主题"></a>预览主题</h2><p>在博客目录打开git bash<br>执行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>还是会出现一段浏览地址，我们在浏览器打开就行了<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_10-04-16.2dvd68y21dm.png" alt=""></p>
+<blockquote>
+<p>注意：有些主题你更换之后是暂时无法预览的，因为有的主题还需要安装它需要的依赖，这一般都会在主题的文档里面提到，只有安装它的依赖之后才可以正常预览</p>
+</blockquote>
+<hr>
+<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><p>我们需要认识两个文件</p>
+<ul>
+<li>站点配置文件<br>指的是博客根目录下的<code>_config.yml</code><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_10-01-51.gwst228nama.png" alt=""></li>
+<li>主题配置文件<br>指的是某个主题下的<code>_config.yml</code><br>它们的名字都叫<code>_config.yml</code>但是你不能弄混淆<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_10-11-13.qayjeoclrer.png" alt=""><br>在我们看主题文档配置的时候，是必须要分清这两个概念的，不然会报错<h2 id="Coding"><a href="#Coding" class="headerlink" title="Coding"></a>Coding</h2>注册一个coding的账号，这里不做演示<blockquote>
+<p><a href="https://coding.net/user" target="_blank" rel="noopener">https://coding.net/user</a></p>
+</blockquote>
+</li>
+</ul>
+<p>然后按照图片新建一个项目<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-25-47.8py42ifi1g3.png" alt=""><br>选择devops<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-25-58.sm3tn54wui.png" alt=""><br>填入相关信息，记得勾选<strong>启用<code>README.cd</code>文件初始化项目</strong><br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-26-29.u2pyq6c928.png" alt=""><br>然后完成创建</p>
+<blockquote>
+<p>我们暂时不能直接上传，需要进行一些配置，如下：</p>
+</blockquote>
+<p>接下来需要我们创建一个git秘钥<br>打开git bash（不要求在哪个目录）<br>执行： “这里面是你的邮箱”<br>不管出现什么信息，你只需要回车就可以了</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C “your_email@youremail.com“</span><br></pre></td></tr></table></figure>
+<p>然后执行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>会输出你的秘钥，我们复制输出信息就行了<br>然后点击头像，打开个人设置–选择SSH公钥–新增公钥<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-33-54.hlvuud9w9ns.png" alt=""><br>然后将你复制的秘钥粘贴进去，记得勾选永久有效<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-34-42.zd3za7e4a6e.png" alt=""></p>
+<hr>
+<p>然后打开git bash<br><strong>执行：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@git.coding.net</span><br></pre></td></tr></table></figure>
+<p>会提示你下面这个，输入yes回车就行了</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Are you sure you want to continue connecting (yes/no/[fingerprint])?</span><br></pre></td></tr></table></figure>
+<p>接下来打开你的项目选择SSH，然后复制右边git开头的地址<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-38-33.r8subsc5h7k.png" alt=""></p>
+<ul>
+<li><p>打开站点配置文件</p>
+</li>
+<li><p>修改deploy信息</p>
+<blockquote>
+<p>deploy:<br>type: git<br>repo: 你复制的地址<br>branch: master</p>
+</blockquote>
+</li>
+</ul>
+<p>例如：<img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-44-14.it2uh45m4jq.png" alt=""><br>在博客根目录下打开git bash<br>分别执行下面的命令：</p>
+<ul>
+<li>yourname是你的名字</li>
+<li>youremail是你的邮箱<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "yourname"</span><br><span class="line">git config --global user.email "youremail"</span><br></pre></td></tr></table></figure>
+然后安装上传插件<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h3 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h3><blockquote>
+<p>以上的配置完成之后，就可以上传了</p>
+</blockquote>
+<p>在博客根目录下打开git bash，执行下面的命令就可以上传了</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-49-05.lkmgvzcdzwh.png" alt=""><br>然后打开项目，打开构建与部署–静态网站–立即发布静态网站</p>
+<blockquote>
+<p>注意：coding需要实名认证，只需要你输入身份证号就可以了，不用担心泄露隐私，因为coding现在是腾讯的</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-50-05.b57ma6w5win.png" alt=""><br>我们只要填写网站名称就行了，然后保存<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-50-36.6fwfau0xu0w.png" alt=""><br>因为是刚构建的网站，所以要手动部署一下，以后上传就不需要手动部署<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/kjhuanhao/blogcdn/img/Snipaste_2020-02-29_12-55-02.ki4y7hiyo2b.png" alt=""><br>然后访问所给的地址，那个就是我们网站的地址了<br><img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/Snipaste_2020-02-29_12-56-21.b5y903lp4hk.png" alt=""><br>之后每次修改完博客要上传的时候，只需执行上传命令</p>
+<blockquote>
+<p>注：github部署不做说明</p>
+</blockquote>
+<hr>
+<h2 id="git分支进行多终端工作"><a href="#git分支进行多终端工作" class="headerlink" title="git分支进行多终端工作"></a>git分支进行多终端工作</h2><p>问题来了，如果你现在在自己的笔记本上写的博客，部署在了网站上，那么你在家里用台式机，或者实验室的台式机，发现你电脑里面没有博客的文件，或者要换电脑了，最后不知道怎么移动文件，怎么办？</p>
+<p>在这里我们就可以利用git的分支系统进行多终端工作了，这样每次打开不一样的电脑，只需要进行简单的配置和在Coding上把文件同步下来，就可以无缝操作了。</p>
+<h3 id="机制"><a href="#机制" class="headerlink" title="机制"></a>机制</h3><p>机制是这样的，由于<code>hexo d</code>上传部署到Coding的其实是hexo编译后的文件，是用来生成网页的，不包含源文件。<br>也就是上传的是在本地目录里自动生成的<code>.deploy_git</code>里面。<br>其他文件 ，包括我们写在source 里面的，和配置文件，主题文件，都没有上传到Coding<br>所以可以利用git的分支管理，将源文件上传到Coding的另一个分支即可。</p>
+<h3 id="上传分支"><a href="#上传分支" class="headerlink" title="上传分支"></a>上传分支</h3><p>首先，先在Coding上新建一个hexo分支<br>然后在这个仓库的分支设置中，选择默认分支为hexo分支（这样每次同步的时候就不用指定分支，比较方便）。<br>然后在本地的任意目录下，打开git bash</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@e.coding.net:eawakeofi/Colsrch/Colsrch.git</span><br></pre></td></tr></table></figure>
+<p>将其克隆到本地，因为默认分支已经设成了hexo，所以clone时只clone了hexo。<br>接下来在克隆到本地的Coding中，把除了<code>.git</code> 文件夹外的所有文件都删掉<br>把之前我们写的博客源文件全部复制过来，除了<code>.deploy_git</code>。这里应该说一句，复制过来的源文件应该有一个<code>.gitignore</code>，用来忽略一些不需要的文件，如果没有的话，自己新建一个，在里面写上如下，表示这些类型文件不需要git：</p>
+<figure class="highlight x86asm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">.DS_Store</span></span><br><span class="line">Thumbs<span class="number">.</span><span class="built_in">db</span></span><br><span class="line"><span class="built_in">db</span><span class="number">.</span>json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line"><span class="meta">public</span>/</span><br><span class="line"><span class="meta">.deploy</span>*/</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意，如果你之前克隆过theme中的主题文件，那么应该把主题文件中的.git文件夹删掉，因为git不能嵌套上传，最好是显示隐藏文件，检查一下有没有，否则上传的时候会出错，导致你的主题文件无法上传，这样你的配置在别的电脑上就用不了了。</p>
+</blockquote>
+<p>而后</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit –m "add branch"</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>这样就上传完了，可以去你的Coding上看一看hexo分支有没有上传上去，其中<code>node_modules</code>、<code>public</code>、<code>db.json</code>已经被忽略掉了，没有关系，不需要上传的，因为在别的电脑上需要重新输入命令安装 。</p>
+<h3 id="更换电脑操作"><a href="#更换电脑操作" class="headerlink" title="更换电脑操作"></a>更换电脑操作</h3><p>一样的，跟之前的环境搭建一样，</p>
+<ul>
+<li>安装git<ul>
+<li>设置git全局邮箱和用户名</li>
+<li>设置ssh key</li>
+</ul>
+</li>
+<li>安装nodejs</li>
+<li>安装hexo<blockquote>
+<p>但是已经不需要初始化了</p>
+</blockquote>
+</li>
+</ul>
+<p>直接在任意文件夹下，</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@………………</span><br></pre></td></tr></table></figure>
+<p>然后进入克隆到的文件夹：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>生成，部署：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>然后就可以开始写你的新博客了</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new "文章名"</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>不要忘了，每次写完最好都把源文件上传一下</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m "xxx"</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<p>如果是在已经编辑过的电脑上，已经有clone文件夹了，那么，每次只要和远端同步一下就行了</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<h2 id="Coding-page和github-page实现国内外分流"><a href="#Coding-page和github-page实现国内外分流" class="headerlink" title="Coding page和github page实现国内外分流"></a>Coding page和github page实现国内外分流</h2><h3 id="1-申请github账户，新建项目"><a href="#1-申请github账户，新建项目" class="headerlink" title="1. 申请github账户，新建项目"></a>1. 申请github账户，新建项目</h3><p>先申请一个账户，然后创建新的项目，这一步项目名称应该是随意的，如若是个人主页则为username.github.io。</p>
+<h3 id="2-添加ssh-key"><a href="#2-添加ssh-key" class="headerlink" title="2. 添加ssh key"></a>2. 添加ssh key</h3><p>有关SSH的添加方法我在之前的文章已经说过了。<a href="https://colsrch.top/go.html?u=https://colsrch.top/2020/04/16/git-command/" target="_blank" rel="noopener">Git常用命令</a></p>
+<h3 id="3-修改-config-yml"><a href="#3-修改-config-yml" class="headerlink" title="3. 修改_config.yml"></a>3. 修改_config.yml</h3><p>hexo官方文档是这样的：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  message: [message]</span><br><span class="line">  repo:</span><br><span class="line">    github: &lt;repository url&gt;,[branch]</span><br><span class="line">    coding: &lt;repository url&gt;,[branch]</span><br></pre></td></tr></table></figure>
+<p>那么，我们只需要：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    coding: git@e.coding.net:eawakeofi/Colsrch/Colsrch.git,master</span><br><span class="line">    github: git@github.com:1332925715/1332925715.github.io.git,master</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="4-部署"><a href="#4-部署" class="headerlink" title="4. 部署"></a>4. 部署</h3><p>保存一下，直接</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>这样就可以在github的项目上看到你部署的文件了。</p>
+<h3 id="5-开启github-pages服务，绑定域名"><a href="#5-开启github-pages服务，绑定域名" class="headerlink" title="5. 开启github pages服务，绑定域名"></a>5. 开启github pages服务，绑定域名</h3><h3 id="6-腾讯云添加解析"><a href="#6-腾讯云添加解析" class="headerlink" title="6. 腾讯云添加解析"></a>6. 腾讯云添加解析</h3><p>这个时候就可以把添加github的解析为境外了，Coding的解析为默认。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>首先感谢<a href="https://colsrch.top/" target="_blank" rel="noopener">Colsrch</a>制作的hexo博客搭建教程及<a href="https://colsrch.top/go.html?u=https://me.csdn.net/sinat_37781304" target="_blank" rel="noopener">zjufangzh</a>的多终端编辑和分流部署教程</p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><blockquote>
+<p><a href="https://yafine-blog.cn/posts/4ab2.html" target="_blank" rel="noopener">地址链接</a></p>
+</blockquote>
+
+          
+            <div class='article_footer'>
+              
+                
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
+  <div class='content'>
+    
+      <blockquote>
+        
+          
+            <p>版权声明：本网站所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://Ronin-xu.github.io">Ronin-xu</a></p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=https://ronin-xu.github.io/2020/05/14/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/>https://ronin-xu.github.io/2020/05/14/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</a></p>
+          
+        
+      </blockquote>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget qrcode  desktop mobile">
+  
+
+  <div class='content article-entry'>
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/QQ.jpg'
+        
+          height='64px'
+        ></div>
+      
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/VX.png'
+        
+          height='64px'
+        ></div>
+      
+    
+  </div>
+</section>
+
+  
+
+
+              
+            </div>
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-10-26T22:25:58+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年10月26日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Hexo</p></a></div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://ronin-xu.github.io/2020/05/14/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/&title=Hexo博客搭建教程 - null&summary=前言Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ronin-xu.github.io/2020/05/14/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/&title=Hexo博客搭建教程 - null&summary=前言Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=https://ronin-xu.github.io/2020/05/14/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/&title=Hexo博客搭建教程 - null&summary=前言Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/Ronin-xu/cdn/loading.gif" data-original="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+          <div class="prev-next">
+            
+              <a class='prev' href='/2020/05/21/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C-Web/'>
+                <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>攻防世界-Web</p>
+                <p class='content'>入口
+地址链接
+
+
+新手练习区view_source这道题的意思是查看源代码那我们就直接F12
+robots
+backup此题考查对index.php文件的备份文件名
+
+php的备份有两种：.p...</p>
+              </a>
+            
+            
+          </div>
+        
+      </section>
+    </article>
+  
+
+  
+    
+  <article class="post white-box reveal comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      <section id="comments">
+        <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+      </section>
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+</div>
+<aside class='l_side'>
+  
+  
+
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo搭建步骤"><span class="toc-text">Hexo搭建步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客环境搭建"><span class="toc-text">博客环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git"><span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Noide-js"><span class="toc-text">安装Noide.js</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#验证node-js是否安装配置成功"><span class="toc-text">验证node.js是否安装配置成功</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装cpm"><span class="toc-text">安装cpm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装hexo"><span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#初始化博客"><span class="toc-text">初始化博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如何下载主题"><span class="toc-text">如何下载主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法1"><span class="toc-text">方法1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法2"><span class="toc-text">方法2</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改配置文件"><span class="toc-text">修改配置文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#预览主题"><span class="toc-text">预览主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置主题"><span class="toc-text">配置主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Coding"><span class="toc-text">Coding</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#上传"><span class="toc-text">上传</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git分支进行多终端工作"><span class="toc-text">git分支进行多终端工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#机制"><span class="toc-text">机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#上传分支"><span class="toc-text">上传分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更换电脑操作"><span class="toc-text">更换电脑操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Coding-page和github-page实现国内外分流"><span class="toc-text">Coding page和github page实现国内外分流</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-申请github账户，新建项目"><span class="toc-text">1. 申请github账户，新建项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-添加ssh-key"><span class="toc-text">2. 添加ssh key</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-修改-config-yml"><span class="toc-text">3. 修改_config.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-部署"><span class="toc-text">4. 部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-开启github-pages服务，绑定域名"><span class="toc-text">5. 开启github pages服务，绑定域名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-腾讯云添加解析"><span class="toc-text">6. 腾讯云添加解析</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-text">后记</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文章"><span class="toc-text">参考文章</span></a></li></ol>
+    </div>
+  </section>
+
+
+  
+
+
+</aside>
+
+
+
+    </div>
+    
+  
+  <footer class="clearfix">
+    <br><br>
+    
+      
+        <div class="aplayer-container">
+          
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='340px'
+      server='netease'
+      type='playlist'
+      id='2854691724'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+        </div>
+      
+    
+      
+        <br>
+        <div class="social-wrapper">
+          
+            
+              <a href="https://www.duboku.co/"
+                class="social fa fa-play-circle flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1871071651&amp;site=qq&amp;menu=yes"
+                class="social fab fa-qq flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="https://github.com/Ronin-xu"
+                class="social fab fa-github flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="https://music.163.com/#/user/home?id=1863446264"
+                class="social fas fa-headphones-alt flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+        </div>
+      
+    
+      
+        <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+      
+    
+      
+        本站使用
+        <a href="https://volantis.js.org/" target="_blank" class="codename">Volantis</a>
+        作为主题，总访问量为
+          <span id="busuanzi_value_site_pv"><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+          次
+        
+      
+    
+      
+        <div class='copyright'>
+        <p><a href="https://Ronin-xu.github.io">Copyright © 2020 Mr. Z</a></p>
+
+        </div>
+      
+    
+  </footer>
+
+
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <div>
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
+
+
+
+  <script>
+    
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
+  </script>
+
+
+
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2/js/instant_page.js" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var imgs=["https://cdn.jsdelivr.net/gh/htname/cdn-wallpaper/131.webp", "https://cdn.jsdelivr.net/gh/htname/cdn-wallpaper/134.webp", "https://cdn.jsdelivr.net/gh/htname/cdn-wallpaper/147.webp", "https://cdn.jsdelivr.net/gh/htname/cdn-wallpaper/155.webp", "https://cdn.jsdelivr.net/gh/htname/cdn-wallpaper/173.webp", "https://cdn.jsdelivr.net/gh/htname/cdn-wallpaper/191.webp", "https://cdn.jsdelivr.net/gh/htname/cdn-wallpaper/195.webp"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+        if ('') {
+          $('').backstretch(
+            imgs,
+          {
+            duration: "20000",
+            fade: "1500"
+          });
+        } else {
+          $.backstretch(
+            imgs,
+          {
+            duration: "20000",
+            fade: "1500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+  
+
+
+<!-- 评论 （PS：只对 valine 做了 Pjax 兼容） -->
+
+  
+  
+<script src="/js/valine.js"></script>
+
+
+<script>
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link'.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function (item) {
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
+  }
+
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+
+  function pjax_valine() {
+    var valinePath = $.trim($('#valine-path').text()) === "none" ?
+            window.location.pathname : $.trim($('#valine-path').text());
+
+    var valinePlaceholder = $.trim($('#valine-placeholder').text()) === "none" ?
+            "快来评论吧~" : $.trim($('#valine-placeholder').text());
+
+    var ALLPATH = '';
+    if(ALLPATH != '') valinePath = ALLPATH;
+
+    var valine = new Valine();
+    valine.init({
+      el: '#valine_container',
+      meta: meta,
+      placeholder: valinePlaceholder,
+      path: valinePath,
+      appId: "PKVBKqJWB1PKD3oQOOwfO52A-MdYXbMMI",
+      appKey: "8C5QmkbyJSXV8Nq7SByCCQsB",
+      pageSize: '10',
+      avatar: 'robohash',
+      lang: 'zh-cn',
+      visitor: 'true',
+      highlight: 'true',
+      mathJax: 'false',
+      enableQQ: 'true',
+      requiredFields: requiredFields,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/emoji/valine/',
+      emojiMaps: emojiMaps
+    })
+  }
+
+  $(function () {
+    pjax_valine();
+  });
+</script>
+
+
+
+
+<!-- darkmodejs -->
+
+
+
+<!-- 复制 -->
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    var clipboard = new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+            return trigger.nextElementSibling
+        }
+    });
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds)
+    }
+    function pjax_initCopyCode() {
+        var copyHtml = '';
+        copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+        copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+        copyHtml += '</button>';
+        $(".highlight .code pre").before(copyHtml);
+        $(".article pre code").before(copyHtml);
+        clipboard.off('success').on('success', function (e) {
+            let $btn = $(e.trigger);
+            $btn.addClass('copied');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-check-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPIED';
+            wait(function () {
+                $icon.removeClass('fa-check-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        });
+        clipboard.off('error').on('error', function (e) {
+            e.clearSelection();
+            let $btn = $(e.trigger);
+            $btn.addClass('copy-failed');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-times-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPY FAILED';
+            wait(function () {
+                $icon.removeClass('fa-times-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        })
+    }
+    $(function () {
+        pjax_initCopyCode()
+    });
+</script>
+
+
+<!-- scrollreveal -->
+
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    function pjax_scrollrebeal() {
+      ScrollReveal().reveal('.l_main .reveal', {
+        distance: '32px',
+        duration: '800',
+        interval: '20',
+        scale: '1',
+        easing: 'ease-out'
+      });
+    }
+
+    $(function () {
+      pjax_scrollrebeal();
+    });
+  </script>
+
+<!-- ******************************** -->
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  function pjax_fancybox() {
+    $(".article-entry").find("img").not('.inline').not('a img').each(function () { //渲染 fancybox
+      var element = document.createElement("a"); // a 标签
+      $(element).attr("pjax-fancybox", "");  // 过滤 pjax
+      $(element).attr("href", $(this).attr("src"));
+      if ($(this).attr("data-original")) {
+        $(element).attr("href", $(this).attr("data-original"));
+      }
+      $(element).attr("data-fancybox", "images");
+      var caption = "";   // 描述信息
+      if ($(this).attr('alt')) {  // 判断当前页面是否存在描述信息
+        $(element).attr('data-caption', $(this).attr('alt'));
+        caption = $(this).attr('alt');
+      }
+      var div = document.createElement("div");
+      $(div).addClass("fancybox");
+      $(this).wrap(div); // 最外层套 div ，其实主要作用还是 class 样式
+      var span = document.createElement("span");
+      $(span).addClass("image-caption");
+      $(span).text(caption); // 加描述
+      $(this).after(span);  // 再套一层描述
+      $(this).wrap(element);  // 最后套 a 标签
+    })
+    $(".article-entry").find("img").fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+      closeClick: true,
+      helpers: {
+        overlay: {closeClick: true}
+      },
+      buttons: [
+        "zoom",
+        "close"
+      ]
+    });
+  };
+  $(function () {
+    pjax_fancybox();
+  });
+</script>
+
+<!-- ******************************** -->
+
+
+  
+<script src="/js/app.js"></script>
+
+
+
+
+  
+    
+<script src="/js/search.js"></script>
+
+  
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js" data-pjax></script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2/js/comment_typing.js"></script>
+
+
+
+
+
+
+
+    
+      
+
+
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+
+<!-- 样式位于：source/css/_third-party/pjaxanimate.styl -->
+
+<div class="pjax-animate">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+    <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+    <div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed: 100})</script></div>
+    <script>
+      window.ShowLoading = function() {
+        NProgress.start();
+      };
+      window.HideLoading = function() {
+        NProgress.done();
+      }
+    </script>
+  
+</div>
+
+<script>
+    var pjax;
+    document.addEventListener('DOMContentLoaded', function () {
+      pjax = new Pjax({
+        elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
+        selectors: [
+          "title",
+          "#pjax-container",
+          "#pjax-header-nav-list"
+        ],
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+        timeout: 5000
+      });
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+      window.stop(); // 相当于点击了浏览器的停止按钮
+      var currentUrl = window.location.pathname;
+      var targetUrl = e.triggerElement.href;
+      var banUrl = [""];
+      if (banUrl[0] != "") {
+        banUrl.forEach(item => {
+          if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+            window.location.href = targetUrl;
+          }
+        });
+      }
+      window.subData = null; // 移除标题（用于一二级导航栏切换处）
+      $.fancybox.close();    // 关闭弹窗
+      $('.nav-main').find('.list-v').not('.menu-phone').css("display","none"); // 移除小尾巴
+      $('.menu-phone.list-v').css("display","none"); // 移除小尾巴
+      $('.l_header .switcher .s-search').removeClass('active'); // 关闭移动端激活的搜索框
+      $('.l_header').removeClass('z_search-open'); // 关闭移动端激活的搜索框
+      $('.wrapper').removeClass('sub'); // 跳转页面时关闭二级导航
+
+      $('.s-top').unbind('click');   // 解绑
+      $('.menu a').unbind('click');  // 解绑
+      $(window).unbind('resize');    // 解绑
+      $(window).unbind('scroll');    // 解绑
+      $(document).unbind('scroll');  // 解绑
+      $(document).unbind('click');   // 解绑
+      $('body').unbind('click');     // 解绑
+      window.ShowLoading();
+    });
+
+    document.addEventListener('pjax:complete', function () {
+      // 关于百度统计对 SPA 页面的处理：
+      // 方案一：百度统计>管理>单页应用设置中，打开开启按钮即可对SPA进行统计。 https://tongji.baidu.com/web/help/article?id=324
+      // 方案二：取消注释下列代码。 https://tongji.baidu.com/web/help/article?id=235
+      // 
+
+      // 关于谷歌统计对 SPA 页面的处理：
+      // 当应用以动态方式加载内容并更新地址栏中的网址时，也应该更新通过 gtag.js 存储的网页网址。
+      // https://developers.google.cn/analytics/devguides/collection/gtagjs/single-page-applications?hl=zh-cn
+      
+
+      $('.nav-main').find('.list-v').not('.menu-phone').removeAttr("style",""); // 移除小尾巴的移除
+      $('.menu-phone.list-v').removeAttr("style",""); // 移除小尾巴的移除
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+
+      try{
+        pjax_fancybox();
+        
+          
+          if ('') {
+            $('').backstretch("resize");
+          } else {
+            $.backstretch("resize");
+          }
+        
+        
+        
+          pjax_scrollrebeal();
+        
+        
+          pjax_initCopyCode();
+        
+        
+          pjax_valine();
+        
+        
+        
+      } catch (e) {
+        console.log(e);
+      }
+      window.HideLoading();
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+      window.HideLoading();
+      window.location.href = e.triggerElement.href;
+    });
+</script>
+
+    
+  </div>
+<script type="text/javascript">
+    var OriginTitile=document.title,st;
+    document.addEventListener("visibilitychange",function(){
+        document.hidden?(document.title="(๑⁼̴̀д⁼̴ ๑) 别拍我",clearTimeout(st)):(document.title="｡°(°¯᷄◠¯᷅°)°｡拍疼了",st=setTimeout(function(){document.title=OriginTitile},3e3))
+    })
+</script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":140,"height":260},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
+            window.imageLazyLoadSetting = {
+                isSPA: true,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var i=n.imageLazyLoadSetting.isSPA,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){i&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,e,a=0;a<r.length;a++)t=r[a],0<=(e=t.getBoundingClientRect()).bottom&&0<=e.left&&e.top<=(n.innerHeight||document.documentElement.clientHeight)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},n.src=i}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
